@@ -4,6 +4,8 @@
 workflow StartTest
 {
 
+Set-AzureSubscription -SubscriptionName 'Pay-As-You-Go' -SubscriptionId 
+
 $RGName = 'RG_LN119437_Automation'
 $AutoAccName = 'LN119437'
 $pwd = Get-AzureRmAutomationVariable -Name 'GTMetrixAPI' -ResourceGroupName $RGNAme -AutomationAccountName $AutoAccName
