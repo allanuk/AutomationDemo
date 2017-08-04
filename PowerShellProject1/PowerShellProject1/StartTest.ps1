@@ -19,5 +19,5 @@ $body = 'url=https://www.ltegroup.co.uk'
 
 $Result = Invoke-RestMethod -Uri $uri -cred $cred -Method Post -Body $body
 
-Set-AzureRmAutomationVariable -Name 'ResultTestURL' -Value $Result.poll_state_url -Encrypted $false -ResourceGroupName $RGName -AutomationAccountName $AutoAccName
+New-AzureRmAutomationVariable -Name 'ResultTestURL' -Value $Result.poll_state_url -Encrypted $false -ResourceGroupName $RGName -AutomationAccountName $AutoAccName
 }
