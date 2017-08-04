@@ -1,7 +1,7 @@
 ﻿#
 # Start Test Script
 #
-workflow StartTestScript-Workflow
+workflow StartTest
 {
 
 $RGName = 'RG_LN119437_Automation'
