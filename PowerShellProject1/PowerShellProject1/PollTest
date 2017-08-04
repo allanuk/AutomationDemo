@@ -1,6 +1,8 @@
 #
 # Poll Test Script
 #
+workflow PollTestScript-Workflow
+{
 
 $RGName = 'RG_LN119437_Automation'
 $AutoAccName = 'LN119437'
@@ -15,3 +17,4 @@ $uri = 'https://gtmetrix.com/api/0.1/test/ePl01IQl'
 
 
 Invoke-RestMethod -Uri $uri -Method Get -cred $cred 
+}

@@ -1,6 +1,8 @@
 ﻿#
 # Start Test Script
 #
+workflow StartTestScript-Workflow
+{
 
 $RGName = 'RG_LN119437_Automation'
 $AutoAccName = 'LN119437'
@@ -16,3 +18,4 @@ $body = 'url=https://www.ltegroup.co.uk'
 $Result = Invoke-RestMethod -Uri $uri -cred $cred -Method Post -Body $body
 
 Set-AzureRmAutomationVariable -Name 'ResultTestURL' -Value $Result.poll_state_url -Encrypted $false -ResourceGroupName $RGName -AutomationAccountName $AutoAccName
+}
