@@ -27,8 +27,8 @@
   </PropertyGroup>
   <ItemGroup />
   <ItemGroup>
-    <Compile Include="StartTest" />
-    <Compile Include="PollTest" />
+    <Compile Include="StartTest.ps1" />
+    <Compile Include="PollTest.ps1" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Target Name="Build" />
