@@ -4,7 +4,7 @@
 workflow StartTest
 {
 
-Select-AzureSubscription -default 'Pay-As-You-Go'
+Select-AzureSubscription -SubscriptionId '3c596139-25d6-4a0b-844b-1d1170dbdb9d' -Default
 
 $RGName = 'RG_LN119437_Automation'
 $AutoAccName = 'LN119437'
